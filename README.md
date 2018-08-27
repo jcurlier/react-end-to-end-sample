@@ -24,19 +24,25 @@ The following main technologies are used:
 
 #### database
 
-- postgreSQL
+- [PostgreSQL](https://www.postgresql.org/)
 
 #### api
 
-- Express
-- Loopback
-- Jest
+- [Express](https://expressjs.com/)
+- [Loopback](https://loopback.io/)
+- [Jest](https://jestjs.io/)
 
 #### web
 
-- React
-- Redux
-- Semantic UI
+- [ReactJS](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Semantic UI](https://react.semantic-ui.com/)
+- [Style System](http://jxnblk.com/styled-system/)
+
+#### Ops
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
 
 ### Installation and Configuration
 
@@ -190,6 +196,30 @@ Name | Description
 [`database`](database) | Database
 [`tools`](tools) | Tools such as Insomnia, Wait for It, etc.
 [`web`](web) | Front-end reactJS/Redux `web` application
+
+## Links
+
+### web
+
+- [ReactJS](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Semantic UI](https://react.semantic-ui.com/)
+- [Style System](http://jxnblk.com/styled-system/)
+
+### api
+
+- [Express](https://expressjs.com/)
+- [Loopback](https://loopback.io/)
+- [Jest](https://jestjs.io/)
+
+### database
+
+- [PostgreSQL](https://www.postgresql.org/)
+
+### ops
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
 
 ## To Dos
 
