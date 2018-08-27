@@ -198,5 +198,7 @@ ID | Description
 1 | Fix `npm audit` for both `web` and `api`
 2 | Cleanup components, css for `web`
 3 | Find a better Carousel component
-4 | Build reuability between `Login` and `Dashboard` pagess
+4 | Build reusability between `Login` and `Dashboard` pagess
 5 | Add more features (refresh, etc.)
+6 | Add error handling
+7 | Add test for the FE
