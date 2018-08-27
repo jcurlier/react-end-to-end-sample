@@ -1,0 +1,8 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@background: none;
+@fontWeight: unset;
+@positiveColor: @teal;
+@invertedBorderSize: 0px;

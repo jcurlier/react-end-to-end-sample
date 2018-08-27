@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Geomanist';
+    src: url('bold/geomanist-bold-webfont.eot');
+    src: url('bold/geomanist-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('bold/geomanist-bold-webfont.woff2') format('woff2'),
+         url('bold/geomanist-bold-webfont.woff') format('woff'),
+         url('bold/geomanist-bold-webfont.ttf') format('truetype'),
+         url('bold/geomanist-bold-webfont.svg#geomanistregular') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist';
+    src: url('book/geomanist-book-webfont.eot');
+    src: url('book/geomanist-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('book/geomanist-book-webfont.woff2') format('woff2'),
+         url('book/geomanist-book-webfont.woff') format('woff'),
+         url('book/geomanist-book-webfont.ttf') format('truetype'),
+         url('book/geomanist-book-webfont.svg#geomanistregular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Geomanist';
+    src: url('medium/geomanist-medium-webfont.eot');
+    src: url('medium/geomanist-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('medium/geomanist-medium-webfont.woff2') format('woff2'),
+         url('medium/geomanist-medium-webfont.woff') format('woff'),
+         url('medium/geomanist-medium-webfont.ttf') format('truetype'),
+         url('medium/geomanist-medium-webfont.svg#geomanistregular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist';
+    src: url('regular/geomanist-regular-webfont.eot');
+    src: url('regular/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('regular/geomanist-regular-webfont.woff2') format('woff2'),
+         url('regular/geomanist-regular-webfont.woff') format('woff'),
+         url('regular/geomanist-regular-webfont.ttf') format('truetype'),
+         url('regular/geomanist-regular-webfont.svg#geomanistregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}

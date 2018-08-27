@@ -1,0 +1,16 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@headerFont        : 'Geomanist', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'Geomanist', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@fontSmoothing     : antialiased;
+
+@blue  : #007EC5;
+@green : #62BB46;
+@red   : #E82C2A;
+@gray  : #8FA1A7;
+@teal  : #17ABCC;
+@columnCount: 12;
+
+@defaultBorderRadius: 5px;

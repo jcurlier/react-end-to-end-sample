@@ -1,0 +1,834 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-08-27T04:05:56.755Z",
+	"__export_source": "insomnia.desktop.app:v6.0.2",
+	"resources": [
+		{
+			"_id": "wrk_22a78c2378f3418f8921706757ac87aa",
+			"created": 1535148947324,
+			"description": "",
+			"modified": 1535148947324,
+			"name": "CollegeBacker",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_3f474bc021f94dd99711ce1b8519608e",
+			"color": null,
+			"created": 1535148947447,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1535148947447,
+			"modified": 1535148951191,
+			"name": "New Environment",
+			"parentId": "wrk_22a78c2378f3418f8921706757ac87aa",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_7e6c3799c7d1405aa92049bc75d4c177",
+			"cookies": [],
+			"created": 1535148947452,
+			"modified": 1535148947452,
+			"name": "Default Jar",
+			"parentId": "wrk_22a78c2378f3418f8921706757ac87aa",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_ed75ea966c5d4e4db752d837c1e18e8f",
+			"created": 1535149202086,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1535149202086,
+			"modified": 1535149202086,
+			"name": "Login",
+			"parentId": "wrk_22a78c2378f3418f8921706757ac87aa",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_88b190dfc6f14d5393ee1b665cacfda6",
+			"created": 1535149882421,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1535149202036,
+			"modified": 1535243867372,
+			"name": "Get Contributors",
+			"parentId": "wrk_22a78c2378f3418f8921706757ac87aa",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_b33778b6928f488b946269de22e4126f",
+			"created": 1535243884828,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1535149202061,
+			"modified": 1535243888429,
+			"name": "Get User",
+			"parentId": "wrk_22a78c2378f3418f8921706757ac87aa",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_b89a09494c7e4a27a6fabd771fa06ffd",
+			"created": 1535243902154,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1535149201986,
+			"modified": 1535245104720,
+			"name": "Unlink contributor",
+			"parentId": "wrk_22a78c2378f3418f8921706757ac87aa",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_ade3ffdd7c0a4d839d1237688951648b",
+			"created": 1535243929379,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1535149201936,
+			"modified": 1535243932541,
+			"name": "Logout",
+			"parentId": "wrk_22a78c2378f3418f8921706757ac87aa",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_169d6f5656cf4b8ab986ae8723246ff3",
+			"created": 1535246531286,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1535149202011,
+			"modified": 1535246534211,
+			"name": "Invite Contributor",
+			"parentId": "wrk_22a78c2378f3418f8921706757ac87aa",
+			"_type": "request_group"
+		},
+		{
+			"_id": "env_1a1238da936645b69112920d1310199e",
+			"color": null,
+			"created": 1535148954627,
+			"data": {
+				"url": "http://localhost:3001/api",
+				"users": {
+					"giroud": {
+						"email": "giroud@example.com",
+						"password": "password"
+					},
+					"griezmann": {
+						"email": "griezmann@example.com",
+						"password": "password"
+					},
+					"loris": {
+						"email": "loris@example.com",
+						"password": "password"
+					},
+					"mandanda": {
+						"email": "mandanda@example.com",
+						"password": "password"
+					},
+					"matuidi": {
+						"email": "matuidi@example.com",
+						"password": "password"
+					},
+					"thauvin": {
+						"email": "thauvin@example.com",
+						"password": "password"
+					}
+				}
+			},
+			"isPrivate": false,
+			"metaSortKey": 1535148954627,
+			"modified": 1535254903496,
+			"name": "Local Dev",
+			"parentId": "env_3f474bc021f94dd99711ce1b8519608e",
+			"_type": "environment"
+		},
+		{
+			"_id": "req_6a863575760d4c418fbe26c63bfbb742",
+			"authentication": {},
+			"body": {},
+			"created": 1535149235695,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1535149235695,
+			"method": "POST",
+			"modified": 1535221159177,
+			"name": "Login no email and password",
+			"parameters": [],
+			"parentId": "fld_ed75ea966c5d4e4db752d837c1e18e8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_04b3899e7dd244ab9ac4cc6831b9e977",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"{{ users.loris.email  }}\",\n\t\"password\": \"{{ users.loris.password  }}\"\n}"
+			},
+			"created": 1535149294209,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b3315ab7b5e443aad815f7a0b4ff593",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149235745,
+			"method": "POST",
+			"modified": 1535335280786,
+			"name": "Login Loris",
+			"parameters": [],
+			"parentId": "fld_ed75ea966c5d4e4db752d837c1e18e8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d5bf394a5fc44e2ea6995e41c92d2d13",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"{{ users.loris.email  }}\",\n\t\"password\": \"{{ users.loris.password  }}\"\n}"
+			},
+			"created": 1535149493167,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b3315ab7b5e443aad815f7a0b4ff593",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149235738.75,
+			"method": "POST",
+			"modified": 1535317644828,
+			"name": "Login with Loris including profile",
+			"parameters": [],
+			"parentId": "fld_ed75ea966c5d4e4db752d837c1e18e8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/login?include=user",
+			"_type": "request"
+		},
+		{
+			"_id": "req_8f2680e06a2d4a0da6d4c752354e6053",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"{{ users.mandanda.email }}\",\n\t\"password\": \"{{ users.mandanda.password }}\"\n}"
+			},
+			"created": 1535152698051,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b3315ab7b5e443aad815f7a0b4ff593",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149235732.5,
+			"method": "POST",
+			"modified": 1535175157255,
+			"name": "Login Mandanda",
+			"parameters": [],
+			"parentId": "fld_ed75ea966c5d4e4db752d837c1e18e8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_319015b9722643b3abc4fa9bc55e64c9",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"{{ users.griezmann.email }}\",\n\t\"password\": \"{{ users.griezmann.password }}\"\n}"
+			},
+			"created": 1535152784978,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b3315ab7b5e443aad815f7a0b4ff593",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149235726.25,
+			"method": "POST",
+			"modified": 1535175168605,
+			"name": "Login Griezmann",
+			"parameters": [],
+			"parentId": "fld_ed75ea966c5d4e4db752d837c1e18e8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5ff5cd452158466c9c2f3677b40af55c",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"{{ users.giroud.email }}\",\n\t\"password\": \"{{ users.giroud.password }}\"\n}"
+			},
+			"created": 1535152793353,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b3315ab7b5e443aad815f7a0b4ff593",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149235714.9219,
+			"method": "POST",
+			"modified": 1535175187942,
+			"name": "Login Giroud",
+			"parameters": [],
+			"parentId": "fld_ed75ea966c5d4e4db752d837c1e18e8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_73760360066e492987686c5dcd47e3c1",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"{{ users.thauvin.email }}\",\n\t\"password\": \"{{ users.thauvin.password }}\"\n}"
+			},
+			"created": 1535152800244,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b3315ab7b5e443aad815f7a0b4ff593",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149235721.5625,
+			"method": "POST",
+			"modified": 1535175189238,
+			"name": "Login Thauvin",
+			"parameters": [],
+			"parentId": "fld_ed75ea966c5d4e4db752d837c1e18e8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_84ed20b55e824021b5cf10bd617b7033",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"{{ users.matuidi.email }}\",\n\t\"password\": \"{{ users.matuidi.password }}\"\n}"
+			},
+			"created": 1535153008647,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b3315ab7b5e443aad815f7a0b4ff593",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149235708.2812,
+			"method": "POST",
+			"modified": 1535175886774,
+			"name": "Login Matuidi",
+			"parameters": [],
+			"parentId": "fld_ed75ea966c5d4e4db752d837c1e18e8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a604fc30cc7a411383a5b7b48c2e1c34",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"{{ users.loris.email  }}\",\n\t\"password\": \"invalid\"\n}"
+			},
+			"created": 1535153244118,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_fff4b546f2224a17b8f36840c5adba3d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149218840.5,
+			"method": "POST",
+			"modified": 1535221179381,
+			"name": "Login valid email and invalid password",
+			"parameters": [],
+			"parentId": "fld_ed75ea966c5d4e4db752d837c1e18e8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_60693bd9fa744182956c9df35e719ba5",
+			"authentication": {},
+			"body": {},
+			"created": 1535149891361,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_04b3899e7dd244ab9ac4cc6831b9e977', '$.id' %}"
+				},
+				{
+					"id": "pair_b8fc01fdd31241088f39de6c96ddc6dd",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149201986,
+			"method": "GET",
+			"modified": 1535335283505,
+			"name": "Get a lot for Loris",
+			"parameters": [],
+			"parentId": "fld_88b190dfc6f14d5393ee1b665cacfda6",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/me/contributors",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a4e2bd13698c480685daf9060e2c3d2c",
+			"authentication": {},
+			"body": {},
+			"created": 1535152717485,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_8f2680e06a2d4a0da6d4c752354e6053', '$.id' %}"
+				},
+				{
+					"id": "pair_b8fc01fdd31241088f39de6c96ddc6dd",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1532437637304.5,
+			"method": "GET",
+			"modified": 1535244191539,
+			"name": "Get a few for Mandanda",
+			"parameters": [],
+			"parentId": "fld_88b190dfc6f14d5393ee1b665cacfda6",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/me/contributors",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c097010b346640e2a5a92521d60cd0aa",
+			"authentication": {},
+			"body": {},
+			"created": 1535152810448,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_319015b9722643b3abc4fa9bc55e64c9', '$.id' %}"
+				},
+				{
+					"id": "pair_b8fc01fdd31241088f39de6c96ddc6dd",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1531081854963.75,
+			"method": "GET",
+			"modified": 1535244610126,
+			"name": "Get many for Griezman",
+			"parameters": [],
+			"parentId": "fld_88b190dfc6f14d5393ee1b665cacfda6",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/me/contributors",
+			"_type": "request"
+		},
+		{
+			"_id": "req_edd97939486240f4a3f61d2a2378aa55",
+			"authentication": {},
+			"body": {},
+			"created": 1535152835685,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_73760360066e492987686c5dcd47e3c1', '$.id' %}"
+				},
+				{
+					"id": "pair_b8fc01fdd31241088f39de6c96ddc6dd",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1530403963793.375,
+			"method": "GET",
+			"modified": 1535244146502,
+			"name": "Get himself for Thauvin",
+			"parameters": [],
+			"parentId": "fld_88b190dfc6f14d5393ee1b665cacfda6",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/me/contributors",
+			"_type": "request"
+		},
+		{
+			"_id": "req_202ccda370dc4710a48a813df6ff18c7",
+			"authentication": {},
+			"body": {},
+			"created": 1535152857523,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_84ed20b55e824021b5cf10bd617b7033', '$.id' %}"
+				},
+				{
+					"id": "pair_b8fc01fdd31241088f39de6c96ddc6dd",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529895545415.5938,
+			"method": "GET",
+			"modified": 1535329107994,
+			"name": "Get none for Matuidi",
+			"parameters": [],
+			"parentId": "fld_88b190dfc6f14d5393ee1b665cacfda6",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/me/contributors",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e5e429987c2544b4a07c0dced41a80db",
+			"authentication": {},
+			"body": {},
+			"created": 1535153123743,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_04b3899e7dd244ab9ac4cc6831b9e977', '$.id' %}"
+				},
+				{
+					"id": "pair_b8fc01fdd31241088f39de6c96ddc6dd",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1533793419645.25,
+			"method": "GET",
+			"modified": 1535175829577,
+			"name": "Get a lot for Loris using Id (not using me)",
+			"parameters": [],
+			"parentId": "fld_88b190dfc6f14d5393ee1b665cacfda6",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/{% response 'body', 'req_04b3899e7dd244ab9ac4cc6831b9e977', '$.userId' %}/contributors",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fa2bc8fb75fc4e0e916a36668b31b6d6",
+			"authentication": {},
+			"body": {},
+			"created": 1535154360070,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_84ed20b55e824021b5cf10bd617b7033', '$.id' %}"
+				},
+				{
+					"id": "pair_b8fc01fdd31241088f39de6c96ddc6dd",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529895545365.5938,
+			"method": "GET",
+			"modified": 1535179863207,
+			"name": "Get error as Matuidi cannot see Loris",
+			"parameters": [],
+			"parentId": "fld_88b190dfc6f14d5393ee1b665cacfda6",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/{% response 'body', 'req_04b3899e7dd244ab9ac4cc6831b9e977', '$.userId' %}/contributors",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d323975caa254a828b2ce378218c225b",
+			"authentication": {},
+			"body": {},
+			"created": 1535243979746,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_04b3899e7dd244ab9ac4cc6831b9e977', '$.id' %}"
+				},
+				{
+					"id": "pair_b8fc01fdd31241088f39de6c96ddc6dd",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149202054.75,
+			"method": "GET",
+			"modified": 1535316991050,
+			"name": "Get self for Loris",
+			"parameters": [],
+			"parentId": "fld_b33778b6928f488b946269de22e4126f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/me",
+			"_type": "request"
+		},
+		{
+			"_id": "req_67149589e8eb41a5814357d6a0449e70",
+			"authentication": {},
+			"body": {},
+			"created": 1535244006665,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_04b3899e7dd244ab9ac4cc6831b9e977', '$.id' %}"
+				},
+				{
+					"id": "pair_b8fc01fdd31241088f39de6c96ddc6dd",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149202004.75,
+			"method": "GET",
+			"modified": 1535244061002,
+			"name": "Get somebody else",
+			"parameters": [],
+			"parentId": "fld_b33778b6928f488b946269de22e4126f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/{% response 'body', 'req_8f2680e06a2d4a0da6d4c752354e6053', '$.userId' %}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2ee84c7354c94462ba329843b8113167",
+			"authentication": {},
+			"body": {},
+			"created": 1535152851149,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_319015b9722643b3abc4fa9bc55e64c9', '$.id' %}"
+				},
+				{
+					"id": "pair_b8fc01fdd31241088f39de6c96ddc6dd",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1530065018208.1875,
+			"method": "DELETE",
+			"modified": 1535338277435,
+			"name": "Delete one for Griezman",
+			"parameters": [],
+			"parentId": "fld_b89a09494c7e4a27a6fabd771fa06ffd",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/me/contributors/rel/{% response 'body', 'req_c097010b346640e2a5a92521d60cd0aa', '$[0].id' %}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_354f0ee3047741beb9d22023985d0e6a",
+			"authentication": {},
+			"body": {},
+			"created": 1535149551234,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_04b3899e7dd244ab9ac4cc6831b9e977', '$.id' %}"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1535149201886,
+			"method": "POST",
+			"modified": 1535243947322,
+			"name": "Logout Loris",
+			"parameters": [],
+			"parentId": "fld_ade3ffdd7c0a4d839d1237688951648b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/logout",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9edb12ec1d1d4957a35b392842f8f170",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"test@example.com\"\n}"
+			},
+			"created": 1535246537893,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8d9e05584d724f04b63bca5f0ec8107b",
+					"name": "Authorization",
+					"value": "{% response 'body', 'req_04b3899e7dd244ab9ac4cc6831b9e977', '$.id' %}"
+				},
+				{
+					"id": "pair_b8fc01fdd31241088f39de6c96ddc6dd",
+					"name": "",
+					"value": ""
+				},
+				{
+					"id": "pair_adf518fbc8d242cfa6b17bf77f68a543",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1529980281811.8906,
+			"method": "POST",
+			"modified": 1535332011348,
+			"name": "Invite contributor for Loris",
+			"parameters": [],
+			"parentId": "fld_169d6f5656cf4b8ab986ae8723246ff3",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url }}/users/inviteContributor",
+			"_type": "request"
+		}
+	]
+}

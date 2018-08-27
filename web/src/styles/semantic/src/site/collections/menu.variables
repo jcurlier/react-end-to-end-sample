@@ -1,0 +1,12 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@dropdownItemFontSize: 16px;
+
+@dropdownItemPadding: 16px;
+
+@dropdownHoveredItemBackground: fade(@teal, 10%);
+
+@dropdownActiveItemBackground: fade(@teal, 10%);
+@dropdownActiveItemFontWeight: 500;

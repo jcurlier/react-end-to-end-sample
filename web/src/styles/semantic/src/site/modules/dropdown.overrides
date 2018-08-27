@@ -1,0 +1,12 @@
+/*******************************
+        User Overrides
+*******************************/
+
+.ui.selection.dropdown {
+  border-bottom: 1px solid @gray;
+
+  &:focus {
+    border-bottom: 1px solid @teal;
+  }
+}
+

@@ -1,0 +1,9 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@inputBackground: transparent;
+@inputBorder: 0;
+@inputBorderRadius: unset;
+
+@invertedInputColor: white;

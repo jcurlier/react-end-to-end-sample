@@ -1,0 +1,19 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@border: 2px solid @teal;
+@borderRadius: 5px;
+@boxShadow: 0 20px 45px 0 fade(@gray, 30%);
+
+@headerFontSize: 14px;
+@headerFontWeight: 500;
+@headerBorder: none;
+@headerPadding: 32px 32px 0px 32px;
+
+@contentPadding: 8px 32px;
+
+@actionBackground: @contentBackground;
+@actionPadding: 20px 0px 42px 0px;
+@actionBorder: none;
+@actionAlign: center;

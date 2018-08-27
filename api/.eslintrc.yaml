@@ -1,0 +1,40 @@
+extends: airbnb-base
+env:
+  es6: true
+  jest: true
+  node: true
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+globals:
+  context: false
+  set: false
+root: true
+rules:
+  arrow-body-style: 'off'
+  brace-style:
+    - error
+    - 1tbs
+    - allowSingleLine: false
+  class-methods-use-this: 'off'
+  no-console: error
+  no-underscore-dangle: error
+  padded-blocks:
+    - error
+    - blocks: never
+      classes: always
+      switches: never
+  quotes:
+    - error
+    - single
+    - allowTemplateLiterals: true
+  no-multiple-empty-lines:
+    - error
+    - max: 2
+      maxBOF: 0
+  object-curly-spacing:
+    - error
+    - never
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies: true

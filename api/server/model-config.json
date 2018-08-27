@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/server/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/server/mixins",
+      "./mixins",
+      "../node_modules/loopback-setup-remote-methods-mixin"
+    ]
+  },
+  "contribute": {
+    "dataSource": "appDs",
+    "public": false
+  },
+  "user": {
+    "dataSource": "appDs",
+    "public": true
+  },
+  "accessToken": {
+    "dataSource": "appDs",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "memoryDs",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "memoryDs",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "memoryDs",
+    "public": false
+  }
+}

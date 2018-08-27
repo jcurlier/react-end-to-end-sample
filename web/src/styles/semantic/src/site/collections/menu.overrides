@@ -1,0 +1,7 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.dropdown .menu > .item >.icon:not(.dropdown) {
+  color: @teal;
+}

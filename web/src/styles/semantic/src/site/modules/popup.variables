@@ -1,0 +1,6 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@border: 2px solid @teal;
+@boxShadow: 0 20px 45px 0 fade(@gray, 30%);

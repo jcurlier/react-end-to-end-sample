@@ -1,0 +1,19 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@menuBoxShadow: 0 20px 45px 0 fade(@gray, 30%);
+@menuBorderRadius: 5px;
+@menuBorder: 2px solid @teal;
+
+@selectionBorder: 0;
+@selectionBorderRadius: unset;
+
+@itemFontSize: 16px;
+@itemPadding: 16px;
+
+@hoveredItemBackground: fade(@teal, 10%);
+
+@selectedBackground: fade(@teal, 10%);
+@activeItemBackground: fade(@teal, 10%);
+@activeItemFontWeight: 500;

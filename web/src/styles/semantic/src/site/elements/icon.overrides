@@ -1,0 +1,7 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+i.blue.circular.icon {
+  box-shadow: 0em 0em 0em 0.1em @blue inset !important;
+}

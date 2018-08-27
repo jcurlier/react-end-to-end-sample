@@ -1,0 +1,42 @@
+version: '3.7'
+services:
+  database:
+    build: ./database
+    ports:
+      - "5432:5432"
+  api:
+    build: ./api
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgres://collegebacker:password@database:5432/collegebacker?ssl=false
+    ports:
+      - 3001:3001
+    depends_on:
+      - database
+    volumes:
+      - ./tools/scripts:/usr/src/app/scripts
+    command:
+      - /bin/sh
+      - -c
+      - |
+        ./scripts/wait-for-it.sh -s -t 30 database:5432
+        npm run database:create
+        npm run database:seed
+        npm run start
+  web:
+    build: ./web
+    environment:
+      - NODE_ENV=production
+      - API_URL=http://api:3001
+    ports:
+      - 3000:3000
+    depends_on:
+      - api
+    volumes:
+      - ./tools/scripts:/usr/src/app/scripts
+    command:
+      - /bin/sh
+      - -c
+      - |
+        ./scripts/wait-for-it.sh -s -t 30 api:3001
+        npm run build:start

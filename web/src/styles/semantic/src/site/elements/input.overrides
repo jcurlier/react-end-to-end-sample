@@ -1,0 +1,12 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.input > input {
+  border-bottom: 1px solid @gray;
+
+  &:focus {
+    border-bottom: 1px solid @teal;
+  }
+}
+

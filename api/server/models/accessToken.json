@@ -1,0 +1,36 @@
+{
+  "strict": true,
+  "name": "accessToken",
+  "properties": {
+    "id": {
+      "id": true,
+      "type": "string"
+    },
+    "ttl": {
+      "default": 1209600,
+      "description": "time to live in seconds (2 weeks by default)",
+      "type": "number",
+      "ttl": true
+    },
+    "created": {
+      "defaultFn": "now",
+      "type": "date"
+    }
+  },
+  "hidden": [],
+  "relations": {
+    "user": {
+      "foreignKey": "userId",
+      "model": "user",
+      "type": "belongsTo"
+    }
+  },
+  "indexes": {},
+  "methods": {},
+  "acls": [],
+  "mixins": {
+    "SetupRemoteMethods": {}
+  },
+  "plural": "accessTokens",
+  "base": "AccessToken"
+}

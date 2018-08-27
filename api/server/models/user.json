@@ -1,0 +1,117 @@
+{
+  "strict": true,
+  "name": "user",
+  "properties": {
+    "realm": false,
+    "emailVerified": false,
+    "verificationToken": false,
+    "username": false,
+    "id": {
+      "id": true,
+      "type": "number",
+      "postgresql": {
+        "columnName": "id",
+        "dataType": "serial"
+      }
+    },
+    "email": {
+      "required": true,
+      "type": "string"
+    },
+    "password": {
+      "required": true,
+      "type": "string"
+    },
+    "firstname": {
+      "required": true,
+      "type": "string"
+    },
+    "lastname": {
+      "required": true,
+      "type": "string"
+    },
+    "photo": {
+      "required": true,
+      "type": "object"
+    }
+  },
+  "relations": {
+    "accessTokens": {
+      "foreignKey": "userId",
+      "model": "accessToken",
+      "type": "hasMany"
+    },
+    "contributors": {
+      "foreignKey": "recipientId",
+      "keyThrough": "contributorId",
+      "through": "contribute",
+      "model": "user",
+      "type": "hasMany"
+    }
+  },
+  "indexes": {
+    "email": {
+      "keys": {
+        "email": 1
+      },
+      "options": {
+        "unique": true
+      }
+    }
+  },
+  "methods": {
+    "inviteContributor": {
+      "description": "Invite a contributor.",
+      "accepts": [
+        {
+          "arg": "email",
+          "http": {
+            "source": "form"
+          },
+          "type": "string"
+        },
+        {
+          "arg": "options",
+          "type": "object",
+          "http": "optionsFromRequest"
+        }
+      ],
+      "http": {
+        "errorStatus": 400,
+        "path": "/inviteContributor",
+        "status": 204,
+        "verb": "post"
+      }
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    },
+    {
+      "property": "inviteContributor",
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "mixins": {
+    "SetupRemoteMethods": {
+      "disableAllExcept": [
+        "findById",
+        "login",
+        "logout",
+        "prototype.__get__contributors",
+        "prototype.__unlink__contributors",
+        "inviteContributor"
+      ]
+    }
+  },
+  "plural": "users",
+  "base": "User",
+  "options": {}
+}

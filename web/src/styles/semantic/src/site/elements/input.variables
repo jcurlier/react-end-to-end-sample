@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@border: 0;
+@background: transparent;
+@borderRadius: unset;

@@ -1,0 +1,31 @@
+{
+  "strict": true,
+  "name": "contribute",
+  "properties": {
+    "id": {
+      "id": true,
+      "type": "number",
+      "postgresql": {
+        "columnName": "id",
+        "dataType": "serial"
+      }
+    }
+  },
+  "hidden": [],
+  "relations": {
+    "contributor": {
+      "model": "user",
+      "type": "belongsTo"
+    },
+    "recipient": {
+      "model": "user",
+      "type": "belongsTo"
+    }
+  },
+  "indexes": {},
+  "methods": {},
+  "acls": [],
+  "mixins": {
+    "SetupRemoteMethods": {}
+  }
+}

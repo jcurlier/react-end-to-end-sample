@@ -1,0 +1,20 @@
+<svg width="18px" height="30px" viewBox="0 0 18 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M31.1856449,27.5808422 C32.058362,28.4510698 33.4746122,28.4510698 34.3473293,27.5808422 C35.2175569,26.7081251 35.2175569,25.2918749 34.3473293,24.4191578 L21.5808422,11.6526707 C20.7081251,10.7824431 19.2918749,10.7824431 18.4191578,11.6526707 L5.6526707,24.4191578 C4.7824431,25.2918749 4.7824431,26.7081251 5.6526707,27.5808422 C6.52538776,28.4510698 7.941638,28.4510698 8.81435506,27.5808422 L20.0048193,16.3878246 L31.1856449,27.5808422 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chevron" transform="translate(-11.000000, -5.000000)">
+            <g transform="translate(20.000000, 20.000000) rotate(90.000000) translate(-20.000000, -20.000000) ">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use fill="white" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="01.-Primary" mask="url(#mask-2)" fill="white">
+                    <g id="Blue-/-03-Dark">
+                        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
