@@ -20,6 +20,8 @@ Users can also `logout` by clicking on their photo on the dashboard header.
 
 ### Architecture Overview
 
+All of the application code is in one place – monorepo and is a monolith application to keep it simple to develop / maintain.
+
 The following main technologies are used:
 
 #### database
